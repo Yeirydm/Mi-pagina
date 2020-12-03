@@ -1,0 +1,173 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+  p{
+    color: black;
+}
+div.img-fluid{
+   
+    background-image: url(img/fondo.png);
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    
+}
+
+
+h2 {
+    background-color: rgba(0,127,255,0.5);
+    box-shadow: 2px 2px 10px #666;
+    padding: 0.25em;
+  }
+  
+  div.espacio3D {
+ 
+    width: 300px;
+    height: 300px;
+    margin: -90px auto 0 auto; 
+    position: relative;
+    perspective-origin: center 50%;
+    perspective: 900px;
+    transform: scale(0.55);
+  }
+  
+  div.cubo3D {
+    position: relative;
+    top: 50px;
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    position: relative;
+    
+    transform-style: preserve-3d;
+    transform: translateZ(-150px);
+    animation-name: gira;
+    transition: all;
+    animation-duration: 8000ms;
+    animation-iteration-count: infinite;
+  }
+  
+  div.base {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(0,0,0,0.15);
+    transform: translateX(75px) translateY(75px) rotateX(90deg) translateZ(-200px);
+    box-shadow: 0 0 50px 100px rgba(0,0,0,0.15);
+
+
+  }
+  aside.cara {
+    position: absolute;
+
+  }
+  
+
+  aside.cara1 { /* Frente */
+    transform: translateZ(150px);
+  }
+  
+  aside.cara2 { /* Atrás */
+    transform: rotateY(180deg) translateZ(150px);
+  }
+  
+  aside.cara3 { /* Izquierda */
+    transform: rotateY(-90deg) translateZ(150px);
+  }
+  
+  aside.cara4 { /* derecha */
+    transform: rotateY(90deg) translateZ(150px);
+  }
+  
+  aside.cara5 { /* abajo */
+    transform: rotateX(-90deg) translateZ(150px);
+  }
+  
+  aside.cara6 { /* arriba */
+    transform: rotateX(90deg) translateZ(150px);
+  }
+  
+  @keyframes gira {
+    0% {
+      transform: translateZ(-150px) rotateY(0deg);
+    }
+   
+    100% {
+      transform: translateZ(-150px) rotateY(360deg);
+    }
+  }
+ div.card-body{
+     background-color: transparent;
+     box-shadow: 2px 2px 5px #999;
+ }
+ img.card-img-top{
+     border: 10px solid rgb(255, 255, 255);
+     box-shadow: 2px 2px 5px #999;
+     width: 286px;
+     height: 286px;
+
+ }
+ table{
+    position: relative;
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+.table-responsive {
+    display: block;
+    height: 525px;
+    width: 100%;
+    overflow-x: auto;
+    border: 0px solid transparent;
+    empty-cells: hide;
+  
+    
+}
+.card-text{
+  position: relative;
+  left: 150px;
+}
+
+div.jumbotron.jumbotron-fluid{
+  background-image: url(img/3371908.jpg);
+  background-size: 100%;
+  
+
+  background-repeat: no-repeat;
+}
+div.fondo{
+  background-color: cornsilk;
+}
+
+button.btn.btn-link.btn-block.text-center {
+ color: floralwhite;
+ font-size: 30px;
+ position: relative;
+ top: 10px;
+ height: 200px;
+}
+div.back1{
+  background-image: url(img/calidoc.jpg);
+  background-size: 100%;
+  
+}
+div.back2{
+  background-image: url(img/frioc.jpg);
+  background-repeat: no-repeat;
+  background-size:100%;
+  
+}
+div.back3{
+  background-image: url(img/3135687.jpg);
+  
+}
+
+div.back4{
+  background-image: url(img/3837255.jpg);
+  background-size: 100%;
+  height: 200px;
+}

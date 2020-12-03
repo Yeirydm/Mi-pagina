@@ -1,0 +1,23 @@
+a{
+    font-style: normal;
+    text-decoration: none;
+}
+p.aling{
+   position: relative;
+   top: -100px;
+   margin: -160px 50px 40px 325px;
+    
+}
+p.card-text{
+    position: relative;
+  left: 430px;
+}
+p.aling2{
+    position: relative;
+    top: -100px;
+    margin: -50px 40px 40px 325px;
+     
+ }
+ .table-responsive{
+   height: 2000px;
+ }
